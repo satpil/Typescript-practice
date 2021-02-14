@@ -18,7 +18,7 @@ assignType = 22;
 
 //array
 let att: any[] = ["sat", "okl"];
-att = "sa";
+att = "sas";
 
 //tuples
 let token: [string, number] = ["sas", 23];
@@ -61,3 +61,10 @@ myNum = myVoid;
 console.log(myNum());
 myNum = myVoid2;
 console.log(myNum(2, 8));
+
+//object
+let object: { name: string; age: number } = {
+  name: "satish",
+  age: 25
+};
+object = { name: "sa", age: 25 };

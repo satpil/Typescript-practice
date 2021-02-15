@@ -68,3 +68,29 @@ let object: { name: string; age: number } = {
   age: 25
 };
 object = { name: "sa", age: 25 };
+
+//type
+type Complex = {data: number[],output:(all:boolean)=>number[]}
+const complex2: Complex = {
+  data: [12,45,455],
+  output: function(all:boolean):number[]{
+    return this.data
+  }
+}
+
+//union type
+let realage: number | string = 27;
+realage=25
+
+//chexk type
+let checkType = 255;
+
+if(typeof checkType === 'number'){
+  console.log('test')
+}
+
+//never
+function( never():never{
+  throw new Error('new error');
+  
+}
